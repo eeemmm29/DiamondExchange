@@ -1,18 +1,14 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "mainwindow.h"
 
-LoginWindow::LoginWindow(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::LoginWindow)
+MainWindow::MainWindow(QWidget *parent)
+    : QWidget(parent)
+    , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
-    // Initialize and add main window to stacked widget
-    mainwindow = new QMainWindow;
 }
 
-LoginWindow::~LoginWindow()
+MainWindow::~MainWindow()
 {
     delete ui;
 }

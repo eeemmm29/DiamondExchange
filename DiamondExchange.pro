@@ -11,15 +11,18 @@ CONFIG += c++17
 
 SOURCES += \
     databasemanager.cpp \
+    loginwindow.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     databasemanager.h \
+    loginwindow.h \
     mainwindow.h \
     stylesheet.h
 
 FORMS += \
+    loginwindow.ui \
     mainwindow.ui
 
 # Default rules for deployment.
